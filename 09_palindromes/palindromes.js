@@ -10,13 +10,9 @@ const palindromes = function (word) {
   for (let i = 0; i < myArray.length; i++) {
     text += myArray[i];
   }
-  if (wordnopunc.toLowerCase() === text.toLowerCase()) {
-    return true;
-  } else {
-    return false;
-  }
-  //   return text;
+  return wordnopunc.toLowerCase() === text.toLowerCase();
 };
+//   return text;
 
 // Do not edit below this line
 module.exports = palindromes;
